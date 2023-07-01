@@ -19,14 +19,12 @@ export class AppComponent implements OnInit {
 
   ngOnInit(): void {
     this.weather.getWeatherData('Shymkent').subscribe((data: IWeather)=> {
-      console.log('4XO4Y4eXQJ ', data);
       this.currentWeather = data;
     });
   }
 
   getWeather() {
     this.weather.getWeatherData(this.cityName).subscribe((data) => {
-      console.log('tqh6mS6Uu1 ', data);
       this.currentWeather = data;
     })
   }
